@@ -1,0 +1,55 @@
+/* Estilo general */
+.menu {
+  background: #1e293b;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.menu-level1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu a,
+.menu span {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+  transition: background 0.3s;
+}
+
+.menu a:hover,
+.menu span:hover {
+  background: #334155;
+  border-radius: 6px;
+}
+
+/* Submenú */
+.menu-level2 {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #334155;
+  margin: 0;
+  padding: 5px 0;
+  min-width: 150px;
+  display: none;
+  border-radius: 6px;
+}
+
+.menu-level2 li a {
+  padding: 8px 12px;
+}
+
+.menu-item:hover .menu-level2 {
+  display: block;
+}
